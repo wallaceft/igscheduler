@@ -1,0 +1,56 @@
+[
+  {
+    "id": "schedule_1756390303246_b66ojwdt9",
+    "filename": "3481910052509461962_58826143687.mp4",
+    "accounts": [
+      {
+        "id": "17841475659958446",
+        "username": "crueldadedomundo"
+      }
+    ],
+    "datetime": "2025-08-28T14:15:00.000Z",
+    "caption": "🎬 Publicação agendada automática! Sistema funcionando perfeitamente! #reels #agendado #automation",
+    "ngrokUrl": " https://a6efbe94a148.ngrok-free.app",
+    "repeatType": "once",
+    "interval": 5,
+    "status": "completed",
+    "created": "2025-08-28T14:11:43.246Z",
+    "results": [
+      {
+        "account": "crueldadedomundo",
+        "success": true,
+        "mediaId": "17846344536555443",
+        "url": "https://www.instagram.com/p/17846344536555443/",
+        "time": "2025-08-28T14:15:40.881Z"
+      }
+    ],
+    "completed": "2025-08-28T14:15:40.881Z"
+  },
+  {
+    "id": "schedule_1756390324870_e2dblyzuq",
+    "filename": "3481910052509461962_58826143687.mp4",
+    "accounts": [
+      {
+        "id": "17841474007619726",
+        "username": "t1roteirosmassivos"
+      }
+    ],
+    "datetime": "2025-08-28T14:15:00.000Z",
+    "caption": "🎬 Publicação agendada automática! Sistema funcionando perfeitamente! #reels #agendado #automation",
+    "ngrokUrl": " https://a6efbe94a148.ngrok-free.app",
+    "repeatType": "once",
+    "interval": 5,
+    "status": "completed",
+    "created": "2025-08-28T14:12:04.870Z",
+    "results": [
+      {
+        "account": "t1roteirosmassivos",
+        "success": true,
+        "mediaId": "18049149602556980",
+        "url": "https://www.instagram.com/p/18049149602556980/",
+        "time": "2025-08-28T14:15:41.201Z"
+      }
+    ],
+    "completed": "2025-08-28T14:15:41.201Z"
+  }
+]
