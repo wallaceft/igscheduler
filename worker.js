@@ -3,6 +3,8 @@ const { Worker } = require('bullmq');
 const { query } = require('./db');
 const axios = require('axios');
 
+const connection = process.env.REDIS_URL;
+
 const worker = new Worker(
   'publishQueue',
   async (job) => {
@@ -20,8 +22,6 @@ const worker = new Worker(
           media_type: 'REELS',
           video_url: videoUrl,
           caption: record.caption,
-          // published: false, // Se quiser agendar em vez de publicar agora
-          // scheduled_publish_time: Math.floor(new Date(record.scheduled_at).getTime() / 1000),
         },
         {
           params: { access_token: record.page_token },
@@ -44,7 +44,7 @@ const worker = new Worker(
       await query('UPDATE jobs SET status=$1 WHERE id=$2', ['failed', record.id]);
     }
   },
-  { connection: process.env.REDIS_URL }
+  { connection }
 );
 
 worker.on('completed', (job) => {
