@@ -44,7 +44,9 @@ const worker = new Worker(
       await query('UPDATE jobs SET status=$1 WHERE id=$2', ['failed', record.id]);
     }
   },
-  { connection }
+  {
+    connection,
+  }
 );
 
 worker.on('completed', (job) => {
